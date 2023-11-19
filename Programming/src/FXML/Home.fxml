@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<SplitPane dividerPositions="0.13226452905811623" orientation="VERTICAL" prefHeight="501.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ProductListController">
+  <items>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="822.0" style="-fx-background-color: #2EA9C4;">
+         <children>
+            <HBox layoutY="1.0" prefHeight="66.0" prefWidth="898.0">
+               <children>
+                  <Label prefHeight="52.0" prefWidth="90.0" style="-fx-text-fill: white;" text=" AIMS" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="28.0" />
+                     </font>
+                  </Label>
+                  <Pane prefHeight="92.0" prefWidth="390.0">
+                     <children>
+                        <TextField layoutY="14.0" prefHeight="38.0" prefWidth="390.0" style="-fx-background-color: white;" />
+                     </children>
+                  </Pane>
+                  <Pane prefHeight="74.0" prefWidth="130.0">
+                     <children>
+                        <Button layoutX="14.0" layoutY="18.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="73.0" style="-fx-background-color: #2E5F69; -fx-font-weight: bold;" text="SEARCH" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </Pane>
+                  <Pane prefHeight="54.0" prefWidth="287.0">
+                     <children>
+                        <Button fx:id="cart" layoutX="209.0" layoutY="14.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="64.0" style="-fx-background-color: #2E5F69; -fx-font-weight: bold;" text="CART" textFill="WHITE" />
+                     </children>
+                  </Pane>
+               </children>
+            </HBox>
+         </children></AnchorPane>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="410.0" prefWidth="898.0">
+         <children>
+            <ScrollPane fx:id="scrollPane" layoutX="6.0" layoutY="-13.0" prefHeight="437.0" prefWidth="892.0">
+               <content>
+                  <GridPane fx:id="productGrid" prefHeight="0.0" prefWidth="210.0">
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" />
+                     </rowConstraints>
+                  </GridPane>
+               </content>
+            </ScrollPane>
+         </children></AnchorPane>
+  </items>
+</SplitPane>

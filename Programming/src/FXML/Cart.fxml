@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<SplitPane dividerPositions="0.14357429718875503" orientation="VERTICAL" prefHeight="487.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.CartController">
+   <items>
+      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="822.0" style="-fx-background-color: #2EA9C4;">
+         <children>
+            <HBox layoutY="1.0" prefHeight="66.0" prefWidth="898.0">
+               <children>
+                  <Pane prefHeight="92.0" prefWidth="390.0">
+                     <children>
+                        <Label layoutX="76.0" layoutY="8.0" prefHeight="52.0" prefWidth="90.0" style="-fx-text-fill: white;" text="CART" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="34.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="back" layoutX="14.0" layoutY="21.0" mnemonicParsing="false" style="-fx-background-color: #2E5F69; -fx-text-fill: white;" text="Back" />
+                     </children>
+                  </Pane>
+                  <Pane prefHeight="74.0" prefWidth="130.0" />
+                  <Pane prefHeight="54.0" prefWidth="287.0" />
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="410.0" prefWidth="898.0">
+         <children>
+            <ScrollPane prefHeight="414.0" prefWidth="654.0">
+               <content>
+                  <GridPane fx:id="CartItemList">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                  </GridPane>
+               </content>
+            </ScrollPane>
+            <Pane layoutX="652.0" prefHeight="414.0" prefWidth="247.0">
+               <children>
+                  <Label layoutX="14.0" layoutY="14.0" prefHeight="87.0" prefWidth="130.0" style="-fx-text-fill: #2EA9C4; -fx-font-size: 32px; -fx-font-weight: bold;" text="PRICE:" />
+                  <Label layoutX="14.0" layoutY="86.0" prefHeight="87.0" prefWidth="130.0" style="-fx-text-fill: #2EA9C4; -fx-font-size: 32px; -fx-font-weight: bold;" text="VAT:" />
+                  <Label layoutX="14.0" layoutY="172.0" prefHeight="87.0" prefWidth="130.0" style="-fx-text-fill: #2EA9C4; -fx-font-size: 32px; -fx-font-weight: bold;" text="SUM:" />
+                  <Line endX="124.00006103515625" endY="0.9999847412109375" layoutX="116.0" layoutY="172.0" startX="-100.0" stroke="#ce3030" strokeWidth="4.0" />
+                  <Label fx:id="price" layoutX="125.0" layoutY="14.0" prefHeight="87.0" prefWidth="121.0" style="-fx-text-fill: #D62727; -fx-font-size: 32px; -fx-font-weight: bold;" text="500" />
+                  <Label fx:id="vat" layoutX="125.0" layoutY="86.0" prefHeight="87.0" prefWidth="121.0" style="-fx-text-fill: #D62727; -fx-font-size: 32px; -fx-font-weight: bold;" text="50" />
+                  <Label fx:id="sum" layoutX="125.0" layoutY="172.0" prefHeight="87.0" prefWidth="121.0" style="-fx-text-fill: #D62727; -fx-font-size: 32px; -fx-font-weight: bold;" text="550" />
+                  <Button fx:id="placeorder" layoutX="14.0" layoutY="347.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="221.0" style="-fx-background-color: #1EACAC; -fx-text-fill: white; -fx-font-size: 25px; -fx-font-weight: bold;" text="PLACE ORDER" />
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+   </items>
+</SplitPane>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<SplitPane dividerPositions="0.14357429718875503" orientation="VERTICAL" prefHeight="487.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.PlaceOrderController">
+   <items>
+      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="822.0" style="-fx-background-color: #2EA9C4;">
+         <children>
+            <HBox layoutY="1.0" prefHeight="66.0" prefWidth="898.0">
+               <children>
+                  <Pane prefHeight="92.0" prefWidth="390.0">
+                     <children>
+                        <Label layoutX="76.0" layoutY="8.0" prefHeight="52.0" prefWidth="247.0" style="-fx-text-fill: white;" text="Place Order" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="34.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="back" layoutX="14.0" layoutY="21.0" mnemonicParsing="false" style="-fx-background-color: #2E5F69; -fx-text-fill: white;" text="Back" />
+                     </children>
+                  </Pane>
+                  <Pane prefHeight="74.0" prefWidth="130.0" />
+                  <Pane prefHeight="54.0" prefWidth="287.0" />
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="410.0" prefWidth="898.0">
+         <children>
+            <Pane layoutX="-1.0" prefHeight="414.0" prefWidth="900.0">
+               <children>
+                  <RadioButton fx:id="fastOrder" layoutX="38.0" layoutY="49.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="20.0" />
+                  <RadioButton fx:id="normalOrder" layoutX="38.0" layoutY="103.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="20.0" />
+                  <Label layoutX="69.0" layoutY="41.0" prefHeight="41.0" prefWidth="165.0" style="-fx-background-color: #2EA9C4; -fx-text-fill: white; -fx-font-size: 20px; -fx-background-radius: 10px; -fx-label-padding: 5px; -fx-font-weight: bold;" text="  Fast Order" />
+                  <Label layoutX="69.0" layoutY="95.0" prefHeight="41.0" prefWidth="165.0" style="-fx-background-color: #2EA9C4; -fx-text-fill: white; -fx-font-size: 20px; -fx-background-radius: 10px; -fx-label-padding: 5px; -fx-font-weight: bold;" text="  Normal Order" />
+                  <Label layoutX="277.0" layoutY="21.0" prefHeight="41.0" prefWidth="165.0" style="-fx-background-color: #2EA9C4; -fx-text-fill: white; -fx-font-size: 20px; -fx-background-radius: 10px; -fx-label-padding: 5px; -fx-font-weight: bold;" text="  Address" />
+                  <Label layoutX="277.0" layoutY="83.0" prefHeight="41.0" prefWidth="165.0" style="-fx-background-color: #2EA9C4; -fx-text-fill: white; -fx-font-size: 20px; -fx-background-radius: 10px; -fx-label-padding: 5px; -fx-font-weight: bold;" text="  City" />
+                  <TextField fx:id="address" layoutX="455.0" layoutY="20.0" prefHeight="43.0" prefWidth="421.0" style="-fx-background-color: #D9D9D9;" />
+                  <Button fx:id="confirmorder" layoutX="442.0" layoutY="321.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="311.0" style="-fx-background-color: #1EACAC; -fx-text-fill: white; -fx-font-size: 25px; -fx-font-weight: bold;" text="Confirm Order" />
+                  <Label layoutX="277.0" layoutY="145.0" prefHeight="41.0" prefWidth="165.0" style="-fx-background-color: #2EA9C4; -fx-text-fill: white; -fx-font-size: 20px; -fx-background-radius: 10px; -fx-label-padding: 5px; -fx-font-weight: bold;" text="  Shipping Note" />
+                  <ComboBox fx:id="city" layoutX="455.0" layoutY="83.0" prefHeight="41.0" prefWidth="421.0" />
+                  <TextArea fx:id="note" layoutX="455.0" layoutY="145.0" prefHeight="142.0" prefWidth="421.0" />
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+   </items>
+</SplitPane>

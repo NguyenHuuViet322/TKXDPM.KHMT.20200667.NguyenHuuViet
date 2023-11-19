@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<SplitPane dividerPositions="0.14357429718875503" orientation="VERTICAL" prefHeight="487.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ResultController">
+   <items>
+      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="822.0" style="-fx-background-color: #2EA9C4;">
+         <children>
+            <HBox layoutY="1.0" prefHeight="66.0" prefWidth="898.0">
+               <children>
+                  <Pane prefHeight="92.0" prefWidth="390.0">
+                     <children>
+                        <Label layoutX="76.0" layoutY="8.0" prefHeight="52.0" prefWidth="247.0" style="-fx-text-fill: white;" text="RESULT" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="34.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="home" layoutX="14.0" layoutY="21.0" mnemonicParsing="false" style="-fx-background-color: #2E5F69; -fx-text-fill: white;" text="Home" />
+                     </children>
+                  </Pane>
+                  <Pane prefHeight="74.0" prefWidth="130.0" />
+                  <Pane prefHeight="54.0" prefWidth="287.0" />
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="410.0" prefWidth="898.0">
+         <children>
+            <Pane layoutX="-1.0" prefHeight="414.0" prefWidth="900.0">
+               <children>
+                  <Text fx:id="resultText" fill="#4bb543" layoutX="149.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: bold;" text="Giao dịch hoàn tất" wrappingWidth="601.3368377685547">
+                     <font>
+                        <Font size="65.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+   </items>
+</SplitPane>

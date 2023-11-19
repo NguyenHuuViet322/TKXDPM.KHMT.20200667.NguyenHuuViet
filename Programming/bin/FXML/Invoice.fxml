@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<SplitPane dividerPositions="0.14357429718875503" orientation="VERTICAL" prefHeight="487.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.InvoiceController">
+   <items>
+      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="822.0" style="-fx-background-color: #2EA9C4;">
+         <children>
+            <HBox layoutY="1.0" prefHeight="66.0" prefWidth="898.0">
+               <children>
+                  <Pane prefHeight="92.0" prefWidth="390.0">
+                     <children>
+                        <Label layoutX="76.0" layoutY="8.0" prefHeight="52.0" prefWidth="247.0" style="-fx-text-fill: white;" text="INVOICE" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="34.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="back" layoutX="14.0" layoutY="21.0" mnemonicParsing="false" style="-fx-background-color: #2E5F69; -fx-text-fill: white;" text="Back" />
+                     </children>
+                  </Pane>
+                  <Pane prefHeight="74.0" prefWidth="130.0" />
+                  <Pane prefHeight="54.0" prefWidth="287.0" />
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="410.0" prefWidth="898.0">
+         <children>
+            <Pane layoutX="-1.0" prefHeight="414.0" prefWidth="900.0">
+               <children>
+                  <Label layoutX="52.0" layoutY="36.0" style="-fx-font-weight: bold;" text="Name">
+                     <font>
+                        <Font size="29.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="49.0" layoutY="119.0" style="-fx-font-weight: bold;" text="Phone">
+                     <font>
+                        <Font size="29.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="476.0" layoutY="119.0" style="-fx-font-weight: bold;" text="Address">
+                     <font>
+                        <Font size="29.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="52.0" layoutY="188.0" style="-fx-font-weight: bold;" text="Ship Info">
+                     <font>
+                        <Font size="29.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="name" layoutX="192.0" layoutY="36.0" prefHeight="43.0" prefWidth="258.0" style="-fx-background-color: #D9D9D9;" />
+                  <TextField fx:id="phone" layoutX="192.0" layoutY="119.0" prefHeight="43.0" prefWidth="258.0" style="-fx-background-color: #D9D9D9;" />
+                  <TextField fx:id="address" layoutX="606.0" layoutY="119.0" prefHeight="43.0" prefWidth="258.0" style="-fx-background-color: #D9D9D9;" />
+                  <TextArea fx:id="note" layoutX="192.0" layoutY="188.0" prefHeight="103.0" prefWidth="677.0" style="-fx-background-color: #D9D9D9;" />
+                  <Button fx:id="confirmorder" layoutX="553.0" layoutY="329.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="311.0" style="-fx-background-color: #1EACAC; -fx-text-fill: white; -fx-font-size: 25px; -fx-font-weight: bold;" text="Confirm Order" />
+                  <Label layoutX="476.0" layoutY="36.0" style="-fx-font-weight: bold;" text="City">
+                     <font>
+                        <Font size="29.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="city" layoutX="606.0" layoutY="36.0" prefHeight="43.0" prefWidth="258.0" style="-fx-background-color: #D9D9D9;" />
+                  <Label layoutX="57.0" layoutY="298.0" prefHeight="26.0" prefWidth="70.0" style="-fx-text-fill: #2EA9C4; -fx-font-size: 15px; -fx-font-weight: bold;" text="Subtotal:" />
+                  <Label fx:id="sum" layoutX="128.0" layoutY="348.0" prefHeight="33.0" prefWidth="86.0" style="-fx-text-fill: #D62727; -fx-font-size: 15px; -fx-font-weight: bold;" text="600" />
+                  <Label fx:id="subtotal" layoutX="127.0" layoutY="298.0" prefHeight="26.0" prefWidth="81.0" style="-fx-text-fill: #D62727; -fx-font-size: 15px; -fx-font-weight: bold;" text="550" />
+                  <Label layoutX="56.0" layoutY="352.0" prefHeight="25.0" prefWidth="40.0" style="-fx-text-fill: #2EA9C4; -fx-font-size: 15px; -fx-font-weight: bold;" text="Sum:" />
+                  <Line endX="54.19996643066406" endY="3.0517578125E-5" layoutX="150.0" layoutY="352.0" startX="-100.0" stroke="#ce3030" />
+                  <Label layoutX="57.0" layoutY="325.0" prefHeight="25.0" prefWidth="40.0" style="-fx-text-fill: #2EA9C4; -fx-font-size: 15px; -fx-font-weight: bold;" text="Ship:" />
+                  <Label fx:id="ship" layoutX="127.0" layoutY="324.0" prefHeight="26.0" prefWidth="81.0" style="-fx-text-fill: #D62727; -fx-font-size: 15px; -fx-font-weight: bold;" text="50" />
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+   </items>
+</SplitPane>

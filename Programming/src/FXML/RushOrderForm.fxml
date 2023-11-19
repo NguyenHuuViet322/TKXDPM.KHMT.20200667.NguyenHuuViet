@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<SplitPane dividerPositions="0.14357429718875503" orientation="VERTICAL" prefHeight="487.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.RushOrderController">
+   <items>
+      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="822.0" style="-fx-background-color: #2EA9C4;">
+         <children>
+            <HBox layoutY="1.0" prefHeight="66.0" prefWidth="898.0">
+               <children>
+                  <Pane prefHeight="92.0" prefWidth="390.0">
+                     <children>
+                        <Label layoutX="76.0" layoutY="8.0" prefHeight="52.0" prefWidth="582.0" style="-fx-text-fill: white;" text="Product that support Rush Order" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="34.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="back" layoutX="14.0" layoutY="21.0" mnemonicParsing="false" style="-fx-background-color: #2E5F69; -fx-text-fill: white;" text="Back" />
+                     </children>
+                  </Pane>
+                  <Pane prefHeight="74.0" prefWidth="130.0" />
+                  <Pane prefHeight="54.0" prefWidth="287.0" />
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="410.0" prefWidth="898.0">
+         <children>
+            <ScrollPane prefHeight="414.0" prefWidth="654.0">
+               <content>
+                  <GridPane fx:id="CartItemList">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                     </columnConstraints>
+                  </GridPane>
+               </content>
+            </ScrollPane>
+            <Pane layoutX="652.0" prefHeight="414.0" prefWidth="247.0">
+               <children>
+                  <Button fx:id="confirmorder" layoutX="14.0" layoutY="347.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="221.0" style="-fx-background-color: #1EACAC; -fx-text-fill: white; -fx-font-size: 20px; -fx-font-weight: bold;" text="CONFIRM ORDER" />
+                  <Label layoutX="12.0" layoutY="9.0" prefHeight="41.0" prefWidth="221.0" style="-fx-background-color: #2EA9C4; -fx-text-alignment: center; -fx-text-fill: white; -fx-font-size: 20px; -fx-background-radius: 10px; -fx-label-padding: 5px; -fx-font-weight: bold;" text="          Arrival Time" />
+                  <DatePicker fx:id="arrivaltime" layoutX="12.0" layoutY="69.0" prefHeight="25.0" prefWidth="221.0" />
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+   </items>
+</SplitPane>

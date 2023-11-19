@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<SplitPane dividerPositions="0.14357429718875503" orientation="VERTICAL" prefHeight="487.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ShippingController">
+   <items>
+      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="822.0" style="-fx-background-color: #2EA9C4;">
+         <children>
+            <HBox layoutY="1.0" prefHeight="66.0" prefWidth="898.0">
+               <children>
+                  <Pane prefHeight="92.0" prefWidth="390.0">
+                     <children>
+                        <Label layoutX="76.0" layoutY="8.0" prefHeight="52.0" prefWidth="247.0" style="-fx-text-fill: white;" text="SHIPPING" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="34.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="back" layoutX="14.0" layoutY="21.0" mnemonicParsing="false" style="-fx-background-color: #2E5F69; -fx-text-fill: white;" text="Back" />
+                     </children>
+                  </Pane>
+                  <Pane prefHeight="74.0" prefWidth="130.0" />
+                  <Pane prefHeight="54.0" prefWidth="287.0" />
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="410.0" prefWidth="898.0">
+         <children>
+            <Pane layoutX="-1.0" prefHeight="414.0" prefWidth="900.0">
+               <children>
+                  <Label layoutX="52.0" layoutY="36.0" style="-fx-font-weight: bold;" text="Name">
+                     <font>
+                        <Font size="29.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="52.0" layoutY="97.0" style="-fx-font-weight: bold;" text="Phone">
+                     <font>
+                        <Font size="29.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="52.0" layoutY="152.0" style="-fx-font-weight: bold;" text="Address">
+                     <font>
+                        <Font size="29.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="52.0" layoutY="207.0" style="-fx-font-weight: bold;" text="Ship Info">
+                     <font>
+                        <Font size="29.0" />
+                     </font>
+                  </Label>
+                  <TextField layoutX="213.0" layoutY="36.0" prefHeight="43.0" prefWidth="569.0" style="-fx-background-color: #D9D9D9;" />
+                  <TextField layoutX="213.0" layoutY="97.0" prefHeight="43.0" prefWidth="569.0" style="-fx-background-color: #D9D9D9;" />
+                  <TextField layoutX="213.0" layoutY="152.0" prefHeight="43.0" prefWidth="569.0" style="-fx-background-color: #D9D9D9;" />
+                  <TextArea layoutX="213.0" layoutY="207.0" prefHeight="103.0" prefWidth="569.0" style="-fx-background-color: #D9D9D9;" />
+                  <Button layoutX="295.0" layoutY="330.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="311.0" style="-fx-background-color: #1EACAC; -fx-text-fill: white; -fx-font-size: 25px; -fx-font-weight: bold;" text="Confirm Order" />
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+   </items>
+</SplitPane>

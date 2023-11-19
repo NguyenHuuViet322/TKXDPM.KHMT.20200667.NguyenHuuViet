@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<SplitPane dividerPositions="0.5244413407821229" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="288.0" style="-fx-border-color: #35d6e1; -fx-border-width: 3px; -fx-border-radius: 10px;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ProductController">
+  <items>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+         <children>
+            <Pane layoutX="6.0" layoutY="-1.0" prefHeight="200.0" prefWidth="134.0">
+               <children>
+                  <Label layoutX="3.0" layoutY="60.0" prefHeight="31.0" prefWidth="76.0" style="-fx-text-fill: white; -fx-background-color: #2E5F69; -fx-font-weight: bold; -fx-background-radius: 10px;" text="  Price">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="3.0" layoutY="100.0" prefHeight="31.0" prefWidth="76.0" style="-fx-text-fill: white; -fx-background-color: #2E5F69; -fx-font-weight: bold; -fx-background-radius: 10px;" text="  Remain">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label id="price" fx:id="price" layoutX="81.0" layoutY="60.0" prefHeight="31.0" prefWidth="46.0" style="-fx-text-fill: white; -fx-background-color: #96afb4; -fx-font-weight: bold; -fx-background-radius: 10px;" text="  500">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label id="remain" fx:id="remain" layoutX="81.0" layoutY="100.0" prefHeight="31.0" prefWidth="46.0" style="-fx-text-fill: white; -fx-background-color: #96afb4; -fx-font-weight: bold; -fx-background-radius: 10px;" text="  20">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label id="name" fx:id="name" layoutX="6.0" layoutY="14.0" prefHeight="31.0" prefWidth="122.0" style="-fx-text-fill: white; -fx-background-color: #2E5F69; -fx-font-weight: bold; -fx-background-radius: 10px;" text="  Midareuchi">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <ComboBox fx:id="combobox" layoutX="6.0" layoutY="145.0" prefHeight="31.0" prefWidth="122.0" promptText="Ammount" style="-fx-background-color: #2EA9C4;" stylesheets="@style.css" />
+               </children>
+            </Pane>
+         </children></AnchorPane>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+         <children>
+            <VBox layoutX="-1.0" layoutY="-1.0" prefHeight="200.0" prefWidth="134.0">
+               <children>
+                  <Pane prefHeight="120.0" prefWidth="134.0">
+                     <children>
+                        <ImageView fx:id="img" fitHeight="108.0" fitWidth="122.0" layoutX="7.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true" />
+                     </children>
+                  </Pane>
+                  <Pane prefHeight="81.0" prefWidth="134.0">
+                     <children>
+                        <Button fx:id="addToCart" layoutX="14.0" layoutY="27.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="107.0" style="-fx-background-color: #2E5F69; -fx-text-fill: white; -fx-font-weight: bold; -fx-font-size: 15px; -fx-background-radius: 5em;" text="Add to cart" />
+                     </children>
+                  </Pane>
+               </children>
+            </VBox>
+         </children></AnchorPane>
+  </items>
+</SplitPane>

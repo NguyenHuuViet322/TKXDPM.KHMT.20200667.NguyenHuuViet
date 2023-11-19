@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="198.0" prefWidth="637.0" style="-fx-border-color: #35d6e1; -fx-border-radius: 10px; -fx-border-width: 3px;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.CartItemController">
+   <children>
+      <Pane prefHeight="198.0" prefWidth="243.0">
+         <children>
+            <ImageView fx:id="img" fitHeight="168.0" fitWidth="200.0" layoutX="22.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </Pane>
+      <Pane prefHeight="198.0" prefWidth="218.0" style="-fx-background-color: #eeeeee;">
+         <children>
+            <Label layoutX="9.0" layoutY="101.0" prefHeight="31.0" prefWidth="113.0" style="-fx-text-fill: white; -fx-background-color: #2E5F69; -fx-font-weight: bold; -fx-background-radius: 10px;" text="  Price">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="9.0" layoutY="58.0" prefHeight="31.0" prefWidth="113.0" style="-fx-text-fill: white; -fx-background-color: #2E5F69; -fx-font-weight: bold; -fx-background-radius: 10px;" text="  Remain">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label id="price" fx:id="remain" layoutX="131.0" layoutY="58.0" prefHeight="31.0" prefWidth="64.0" style="-fx-text-fill: white; -fx-background-color: #96afb4; -fx-font-weight: bold; -fx-background-radius: 10px;" text="  500">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label id="remain" fx:id="price" layoutX="131.0" layoutY="101.0" prefHeight="31.0" prefWidth="64.0" style="-fx-text-fill: white; -fx-background-color: #96afb4; -fx-font-weight: bold; -fx-background-radius: 10px;" text="  20">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label id="name" fx:id="name" layoutX="9.0" layoutY="16.0" prefHeight="31.0" prefWidth="190.0" style="-fx-text-fill: white; -fx-background-color: #2E5F69; -fx-font-weight: bold; -fx-background-radius: 10px;" text="  Midareuchi">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="10.0" layoutY="146.0" prefHeight="31.0" prefWidth="113.0" style="-fx-text-fill: white; -fx-background-color: #2E5F69; -fx-font-weight: bold; -fx-background-radius: 10px;" text="  Amount">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label id="remain" fx:id="ammount" layoutX="132.0" layoutY="146.0" prefHeight="31.0" prefWidth="64.0" style="-fx-text-fill: white; -fx-background-color: #96afb4; -fx-font-weight: bold; -fx-background-radius: 10px;" text="  21">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <Button fx:id="removeFromCart" layoutX="9.0" layoutY="14.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="172.0" style="-fx-background-color: #DE0000; -fx-text-fill: white; -fx-font-weight: bold; -fx-font-size: 14px;" text="Remove from Cart" />
+         </children>
+      </Pane>
+   </children>
+</HBox>
