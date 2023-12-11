@@ -163,7 +163,7 @@ public class PlaceOrderController implements Initializable {
 		if (address.getText()==null) return false;
 		if (note.getText() != null && note.getText().toString().length() > 50) return false;
 		if (city.getValue()==null) return false;
-		if (city.getValue().toString().compareTo("Hà Nội") == 0 && fastOrder.isSelected()) return false;
+		if (city.getValue().toString().compareTo("Hà Nội") != 0 && fastOrder.isSelected()) return false;
 		return true;
 	}
 	
